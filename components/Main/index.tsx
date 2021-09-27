@@ -9,19 +9,34 @@ import Divider1 from '../Divider1'
 export default function Main() {
   return (
     <main className={styles.main}>
-      <section className={`${globals.section} ${styles.home}`}>
+      <section className={`${styles.home}`} id="home">
         <div className={`${styles.container} ${globals.grid}`}>
           <div className={styles.image}>
             <Image className={globals.img} src={img1} alt="Ilustração do trabalho no salão de beleza." />
           </div>
           <div className={styles.text}>
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 className={globals.title}>Saúde natural para os seus cabelos</h2>
             <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
             <Button href={'#'} title="Agendar um horário" />
           </div>
         </div>
       </section>
+
       <Divider1 />
+
+      <section className={styles.about} id="about">
+        <div className={`${globals.container} ${globals.grid}`}>
+          Sobre
+        </div>
+      </section>
+
+      <Divider1 />
+
+      <section className={styles.services} id="services">
+        <div className={`${globals.container} ${globals.grid}`}>
+          Serviços
+        </div>
+      </section>
     </main>
   )
 }

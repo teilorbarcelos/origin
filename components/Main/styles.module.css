@@ -1,5 +1,10 @@
 .main {
+  /* margin-top: calc(var(--header-height) + 2rem); */
   margin-top: var(--header-height);
+}
+
+.main section {
+  padding: 5rem 0;
 }
 
 .home {

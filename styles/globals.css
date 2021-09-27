@@ -37,12 +37,6 @@ body {
   -webkit-font-smooothing: antialiased;
 }
 
-h1 {
-  font: 700 1.875rem 'Poppins', sans-serif;
-  color: var(--title-color);
-  -webkit-font-smooothing: auto;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -52,9 +46,4 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  margin: 0 1.5rem;
 }

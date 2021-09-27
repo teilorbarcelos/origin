@@ -7,11 +7,13 @@
   height: auto;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
 .grid {
   display: grid;
   gap: 2rem;
+}
+
+.title {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smooothing: auto;
 }

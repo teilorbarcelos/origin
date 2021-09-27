@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import styles from './styles.module.css'
 import globals from '../../styles/globals.module.css'
+import Menu from '../Menu'
 
 export default function Header() {
   return (
@@ -10,7 +11,9 @@ export default function Header() {
         <Link href={'#'}>
           <a className={`${styles.logo}`}>beauty<span className={styles.coloured}>salon</span>.</a>
         </Link>
-        <div className={styles.menu}>...</div>
+
+        <Menu />
+
       </nav>
     </header>
   )
