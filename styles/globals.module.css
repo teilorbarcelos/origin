@@ -1,4 +1,17 @@
 .container {
-  width: 100%;
   margin: 0 1.5rem;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
 }

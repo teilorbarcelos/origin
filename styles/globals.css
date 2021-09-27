@@ -40,6 +40,7 @@ body {
 h1 {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
+  -webkit-font-smooothing: auto;
 }
 
 a {
