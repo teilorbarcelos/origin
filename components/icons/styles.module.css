@@ -1,0 +1,7 @@
+.fill {
+  fill: var(--base-color);
+}
+
+.stroke {
+  stroke: var(--base-color);
+}

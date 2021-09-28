@@ -16,4 +16,5 @@
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smooothing: auto;
+  margin-bottom: 1rem;
 }
