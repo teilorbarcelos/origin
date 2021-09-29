@@ -6,6 +6,8 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  animation: slideDown 1s ease;
 }
 
 .mobile {
@@ -21,6 +23,10 @@
   .mobile {
     display: block;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .container ul li {
@@ -62,5 +68,15 @@
   
     right: 1.5rem;
     top: 1.5rem;
+  }
+}
+
+/* animations */
+@keyframes slideDown {
+  0%{
+      transform: translate(-200, 0);
+  }
+  100%{
+      transform: translate(0, 0);
   }
 }
