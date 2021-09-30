@@ -1,13 +1,10 @@
 .container {
-  display: none;
   background: var(--body-color);
   height: 100vh;
   width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-
-  animation: slideDown 1s ease;
 }
 
 .mobile {
@@ -22,61 +19,5 @@
 
   .mobile {
     display: block;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.container ul li {
-  text-align: center;
-}
-
-.container ul li a {
-  position: relative;
-  transition: .2s;
-}
-
-.container ul li a:hover {
-  color: var(--base-color);
-}
-
-.container ul li a::after {
-  content: '';
-  height: 2px;
-  width: 0%;
-  background: var(--base-color);
-  position: absolute;
-  left: 50%;
-  bottom: -1.5rem;
-  transition: .5s;
-}
-
-.container ul li a:hover::after {
-  width: 80%;
-  left: 10%;
-}
-
-@media screen and (max-width: 960px) {
-  .container ul {
-    gap: 4rem;
-  }
-
-  .close {
-    position: absolute;
-  
-    right: 1.5rem;
-    top: 1.5rem;
-  }
-}
-
-/* animations */
-@keyframes slideDown {
-  0%{
-      transform: translate(-200, 0);
-  }
-  100%{
-      transform: translate(0, 0);
   }
 }

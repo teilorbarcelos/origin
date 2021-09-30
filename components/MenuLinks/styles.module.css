@@ -1,0 +1,41 @@
+.ul li {
+  text-align: center;
+}
+
+.ul li a {
+  position: relative;
+  transition: .2s;
+}
+
+.ul li a:hover {
+  color: var(--base-color);
+}
+
+.ul li a::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: var(--base-color);
+  position: absolute;
+  left: 50%;
+  bottom: -1.5rem;
+  transition: .5s;
+}
+
+.ul li a:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+@media screen and (max-width: 960px) {
+  .container ul {
+    gap: 4rem;
+  }
+
+  .close {
+    position: absolute;
+  
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+}

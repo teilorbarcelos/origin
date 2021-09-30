@@ -1,0 +1,10 @@
+.modal {
+  z-index: -1000;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.show {
+  z-index: 10000;
+  opacity: 1;
+}

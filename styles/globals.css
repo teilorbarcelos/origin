@@ -65,3 +65,17 @@ section header {
 .grid {
   display: grid;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

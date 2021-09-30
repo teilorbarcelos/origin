@@ -26,3 +26,7 @@
 .coloured {
   color: var(--base-color);
 }
+
+.scroll {
+  box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+}
