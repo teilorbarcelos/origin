@@ -1,0 +1,24 @@
+.header {
+  max-width: 100%;
+}
+
+.testimonials {
+  background: white;
+}
+
+.userImage {
+  clip-path: circle();
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.testimonialList {
+
+}
+
+.testimonial {
+
+}
