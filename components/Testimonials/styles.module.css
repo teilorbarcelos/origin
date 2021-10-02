@@ -1,9 +1,17 @@
 .header {
-  max-width: 100%;
+  /* max-width: 90vw; */
 }
 
 .testimonials {
   background: white;
+}
+
+.swiper {
+  width: 97vw;
+}
+
+.swiperSlide {
+  
 }
 
 .userImage {

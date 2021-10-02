@@ -1,7 +1,9 @@
+import { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination';
 import Image from 'next/image'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 import styles from './styles.module.css'
 import globals from '../../styles/globals.module.css'
@@ -9,27 +11,24 @@ import User1 from '../../public/user1.jpg'
 import User2 from '../../public/user2.jpg'
 import User3 from '../../public/user3.jpg'
 import Testimonial from '../Testimonial'
-import { useEffect, useState } from 'react';
 
 export default function Testimonials() {
-  const [screenWidth, setScreenWidth] = useState(0)
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth)
-  }, [])
 
   return (
-    <section className={styles.testimonials} id="testimonials">
+    <section className={`${styles.testimonials}`} id="testimonials">
       <div className={`${globals.container} ${styles.grid}`}>
         <header className={styles.header}>
           <h2 className={globals.title}>Depoimentos de quem já passou por aqui</h2>
         </header>
         <div className={`${styles.testimonialList}`}>
+
           <Swiper
-            width={screenWidth}
-            spaceBetween={50}
+            className={styles.swiper}
+            modules={[Pagination]}
+            spaceBetween={5}
             slidesPerView={1}
-            pagination
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
               <Testimonial
@@ -82,6 +81,7 @@ export default function Testimonials() {
                 userName="Valeska Fabris"
               />
             </SwiperSlide>
+
           </Swiper>
 
         </div>
