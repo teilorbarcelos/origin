@@ -1,15 +1,24 @@
 import styles from './styles.module.css'
 import Link from 'next/link'
+import { ButtonHTMLAttributes, ReactNode } from 'react'
 
 interface Props {
+  target?: string
+  icon?: ReactNode | false
   title: string
   href: string
 }
 
-export default function Button({ title, href }: Props) {
+export default function Button({ icon = false, title, href, target = '_blank' }: Props) {
   return (
     <Link href={href}>
-      <a className={styles.button}>{title}</a>
+      <a
+        target={target}
+        className={styles.button}
+      >
+        {icon && <i className={styles.icon}>{icon}</i>}
+        {title}
+      </a>
     </Link>
   )
 }

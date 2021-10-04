@@ -79,3 +79,7 @@ section header {
     display: block;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color) !important;
+}

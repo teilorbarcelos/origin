@@ -16,21 +16,25 @@ export default function Testimonials() {
 
   return (
     <section className={`${styles.testimonials}`} id="testimonials">
-      <div className={`${globals.container} ${styles.grid}`}>
+      <div className={`${styles.container}`}>
         <header className={styles.header}>
           <h2 className={globals.title}>Depoimentos de quem já passou por aqui</h2>
         </header>
         <div className={`${styles.testimonialList}`}>
 
           <Swiper
-            className={styles.swiper}
+            className={`${styles.swiper} mobile`}
             modules={[Pagination]}
             spaceBetween={5}
             slidesPerView={1}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true
+            }}
             scrollbar={{ draggable: true }}
+          // mousewheel={true}
+          // keyboard={true}
           >
-            <SwiperSlide>
+            <SwiperSlide className={`${styles.swiperSlide}`} >
               <Testimonial
                 text="Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados."
                 userImage={
@@ -48,7 +52,7 @@ export default function Testimonials() {
             </SwiperSlide>
 
 
-            <SwiperSlide>
+            <SwiperSlide className={`${styles.swiperSlide}`} >
               <Testimonial
                 text="Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados."
                 userImage={
@@ -65,7 +69,7 @@ export default function Testimonials() {
               />
             </SwiperSlide>
 
-            <SwiperSlide>
+            <SwiperSlide className={`${styles.swiperSlide}`} >
               <Testimonial
                 text="Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados."
                 userImage={
@@ -86,6 +90,6 @@ export default function Testimonials() {
 
         </div>
       </div>
-    </section>
+    </section >
   )
 }

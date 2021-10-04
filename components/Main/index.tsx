@@ -29,6 +29,8 @@ export default function Main() {
 
       <Contact />
 
+      <Divider1 />
+
     </main>
   )
 }

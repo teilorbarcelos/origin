@@ -13,3 +13,7 @@
 .button:hover {
   background: var(--base-color-alt);
 }
+
+.icon {
+  margin-right: 0.625rem;
+}
