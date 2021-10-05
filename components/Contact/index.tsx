@@ -16,7 +16,7 @@ export default function Contact() {
           <div className={styles.button}>
             <Button
               target="_blank"
-              icon={<WhatsappIcon />}
+              icon={<WhatsappIcon color="white" />}
               href={'https://api.whatsapp.com/send?phone=+5548998634063&text=hello'}
               title="Entre em contato"
             />

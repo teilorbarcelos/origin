@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Header from '../components/Header'
 import Main from '../components/Main'
+import Footer from '../components/Footer'
+import ArrowUp from '../components/icons/ArrowUp'
+import styles from './styles.module.css'
 
 const Home: NextPage = () => {
   const [render, setRender] = useState(false)
@@ -22,6 +26,12 @@ const Home: NextPage = () => {
       <Header />
 
       {render && <Main />}
+
+      <Footer />
+
+      <Link href={'#home'}>
+        <a className={styles.arrowUp}><i><ArrowUp color="white" /></i></a>
+      </Link>
     </div>
   )
 }

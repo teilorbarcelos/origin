@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scroll && styles.scroll}`}>
       <nav className={`${globals.container} ${styles.nav}`}>
-        <Link href={'#'}>
+        <Link href={'/'}>
           <a className={`${styles.logo}`}>beauty<span className={styles.coloured}>salon</span>.</a>
         </Link>
 

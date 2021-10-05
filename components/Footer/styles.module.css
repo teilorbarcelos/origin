@@ -1,0 +1,25 @@
+.container {
+  padding: 4rem 1.5rem;
+  background: var(--base-color);
+}
+
+.brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+.logo {
+  display: inline-block;
+  font: 700 1.31rem var(--title-font);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+
+.coloured {
+  color: var(--body-color);
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+}
