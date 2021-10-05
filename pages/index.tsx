@@ -1,11 +1,17 @@
+import React, { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import Header from '../components/Header'
 import Main from '../components/Main'
-import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const [render, setRender] = useState(false)
+
+  useEffect(() => {
+    setRender(true)
+  }, [])
+
   return (
     <div>
       <Head>
@@ -15,7 +21,7 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <Main />
+      {render && <Main />}
     </div>
   )
 }

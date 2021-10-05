@@ -6,28 +6,38 @@ import Services from '../Services'
 import Divider2 from '../Divider2'
 import Testimonials from '../Testimonials'
 import Contact from '../Contact'
+import ScrollReveal from '../ScrollReveal'
 
 export default function Main() {
   return (
     <main className={styles.main}>
-
-      <Home />
-
-      <Divider1 />
-
-      <About />
-
-      <Divider2 />
-
-      <Services />
+      <ScrollReveal>
+        <Home />
+      </ScrollReveal>
 
       <Divider1 />
 
-      <Testimonials />
+      <ScrollReveal>
+        <About />
+      </ScrollReveal>
 
       <Divider2 />
 
-      <Contact />
+      <ScrollReveal>
+        <Services />
+      </ScrollReveal>
+
+      <Divider1 />
+
+      <ScrollReveal>
+        <Testimonials />
+      </ScrollReveal>
+
+      <Divider2 />
+
+      <ScrollReveal>
+        <Contact />
+      </ScrollReveal>
 
       <Divider1 />
 
