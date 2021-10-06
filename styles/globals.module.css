@@ -13,7 +13,7 @@
 }
 
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smooothing: auto;
   margin-bottom: 1rem;

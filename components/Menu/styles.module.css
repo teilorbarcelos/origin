@@ -11,7 +11,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
   .container {
     display: grid;
     place-content: center;
