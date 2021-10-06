@@ -8,7 +8,7 @@ interface Props {
 
 export default function Modal({ children, show = false }: Props) {
   return (
-    <div className={`${styles.modal} ${show ? styles.show : ''}`}>
+    <div className={`${styles.modal} ${show && styles.show}`}>
       {children}
     </div>
   )
