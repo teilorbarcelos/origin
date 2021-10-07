@@ -10,37 +10,39 @@ interface Props {
 export default function MenuLinks({ desktop = true }: Props) {
   return (
     <>
-      <ul className={`${globals.grid} ${styles.ul}`}>
+      <ul className={`${globals.grid} ${styles.ul} ${desktop && styles.desktop}`}>
         <li>
           <Link href={'#home'}>
-            <a className={globals.title}>Início</a>
+            <a className={desktop ? styles.links : globals.title}>Início</a>
           </Link>
         </li>
         <li>
           <Link href={'#about'}>
-            <a className={globals.title}>Sobre</a>
+            <a className={desktop ? styles.links : globals.title}>Sobre</a>
           </Link>
         </li>
         <li>
           <Link href={'#services'}>
-            <a className={globals.title}>Serviços</a>
+            <a className={desktop ? styles.links : globals.title}>Serviços</a>
           </Link>
         </li>
         <li>
           <Link href={'#testimonials'}>
-            <a className={globals.title}>Depoimentos</a>
+            <a className={desktop ? styles.links : globals.title}>Depoimentos</a>
           </Link>
         </li>
         <li>
           <Link href={'#contact'}>
-            <a className={globals.title}>Contato</a>
+            <a className={desktop ? styles.links : globals.title}>Contato</a>
           </Link>
         </li>
       </ul>
 
-      <div className={`${styles.close} mobile`}>
-        <CloseIcon />
-      </div>
+      {!desktop &&
+        <div className={`${styles.close}`}>
+          <CloseIcon />
+        </div>
+      }
     </>
   )
 }

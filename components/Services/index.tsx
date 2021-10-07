@@ -9,9 +9,9 @@ export default function Services() {
   return (
     <section className={styles.services} id="services">
       <div className={`${globals.container} ${styles.grid}`}>
-        <header>
+        <header className={styles.header}>
           <h2 className={globals.title}>Serviços</h2>
-          <p>Com mais de 10 anos no mercado, o <strong className={styles.coloured}>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+          <p className={globals.subtitle}>Com mais de 10 anos no mercado, o <strong className={styles.coloured}>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
         </header>
         <div className={`${styles.cards} ${styles.grid}`}>
           <Card

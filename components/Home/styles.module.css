@@ -45,3 +45,23 @@
   margin-bottom: 2rem;
   max-width: 100%;
 }
+
+@media screen and (min-width: 1200px){
+  .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .image {
+    order: 1;
+    max-width: 24rem;
+  }
+
+  .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+}

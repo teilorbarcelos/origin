@@ -27,7 +27,27 @@
   left: 10%;
 }
 
-@media screen and (max-width: 960px) {
+.desktop{
+  visibility: hidden;
+}
+
+.links {
+  font: 400 1rem var(--title-font);
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop{
+    visibility: visible;
+  }
+
+  .ul {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .container ul {
     gap: 4rem;
   }

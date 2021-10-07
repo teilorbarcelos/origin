@@ -1,4 +1,4 @@
 .main {
   /* margin-top: calc(var(--header-height) + 2rem); */
-  margin-top: var(--header-height);
+  /* margin-top: var(--header-height); */
 }

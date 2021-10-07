@@ -17,3 +17,9 @@
 .icon {
   margin-right: 0.625rem;
 }
+
+@media screen and (min-width: 1200px){
+  .button {
+    height: 3.125rem;
+  }
+}

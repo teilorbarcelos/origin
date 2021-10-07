@@ -9,7 +9,7 @@ export default function Menu() {
 
   return (
     <>
-      {/* <MenuLinks /> */}
+      <MenuLinks />
 
       <Modal
         show={menuOpen}
