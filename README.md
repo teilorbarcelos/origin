@@ -61,6 +61,14 @@ This project is under a MIT license. See the file [LICENSE](.github/LICENSE.md) 
 
 ---
 
+## Links
+ 
+  - Link of deployed application: http://origin-ten.vercel.app/
+  - Repository: https://github.com/teilorbarcelos/origin
+    - In case of sensitive bugs like security vulnerabilities, please contact
+      OUR EMAIL directly instead of using issue tracker. We value your effort
+      to improve the security and privacy of this project!
+
 Feito com ♥ by Teilor Souza Barcelos com ajuda da Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
 
 Made with ♥ by Teilor Souza Barcelos with help of Rocketseat :wave: [Join our community!](https://discordapp.com/invite/gCRAFhc)
