@@ -20,7 +20,7 @@ export default function MenuLinks({ desktop = true }: Props) {
   function verifyCurrentSection() {
 
     if (sections) {
-      const checkpoint = (window.pageYOffset * 10 / 100) + (window.innerHeight / 4)
+      const checkpoint = (window.pageYOffset / 10) + (window.innerHeight / 4)
 
       sections.forEach(section => {
         const sectionRect = section.getBoundingClientRect()
