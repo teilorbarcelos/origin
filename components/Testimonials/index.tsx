@@ -15,16 +15,19 @@ import MySwiper from '../MySwiper'
 export default function Testimonials() {
   const testimonials = [
     {
+      id: 1,
       text: 'Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.',
       userImage: User1,
       name: 'Wanessa Souza'
     },
     {
+      id: 2,
       text: 'Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.',
       userImage: User2,
       name: 'Franciele Venega'
     },
     {
+      id: 3,
       text: 'Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.',
       userImage: User3,
       name: 'Valeska Fabris'
@@ -42,30 +45,7 @@ export default function Testimonials() {
           <MySwiper>
             {testimonials.map(item => {
               return (
-                <SwiperSlide className={`${styles.swiperSlide}`} >
-                  <Testimonial
-                    text={item.text}
-                    userImage={
-                      <Image
-                        objectFit={'cover'}
-                        width={32}
-                        height={32}
-                        className={styles.userImage}
-                        src={item.userImage}
-                        alt={`Foto ${item.name}`}
-                      />
-                    }
-                    userName={item.name}
-                  />
-                </SwiperSlide>
-              )
-            })}
-          </MySwiper>
-
-          <MySwiper mobile={false}>
-            {testimonials.map(item => {
-              return (
-                <SwiperSlide className={`${styles.swiperSlide}`} >
+                <SwiperSlide key={item.id} className={`${styles.swiperSlide}`} >
                   <Testimonial
                     text={item.text}
                     userImage={

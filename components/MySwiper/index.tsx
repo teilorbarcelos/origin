@@ -1,22 +1,40 @@
+import { ReactNode } from 'react'
 import { Pagination } from 'swiper'
 import { Swiper } from 'swiper/react'
 
 import styles from './styles.module.css'
-import globals from '../../styles/globals.module.css'
-import { ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
-  mobile?: boolean
 }
 
-export default function MySwiper({ children, mobile = true }: Props) {
+export default function MySwiper({ children }: Props) {
   return (
     <Swiper
-      className={`${styles.swiper} ${mobile ? globals.mobile : globals.desktop}`}
+      className={`${styles.swiper}`}
       modules={[Pagination]}
       spaceBetween={5}
-      slidesPerView={mobile ? 1 : 2}
+      slidesPerView={1}
+      breakpoints={
+        {
+          768: {
+            width: 768,
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1024: {
+            width: 1024,
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1120: {
+            width: 1120,
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+
+        }
+      }
       pagination={{
         clickable: true
       }}

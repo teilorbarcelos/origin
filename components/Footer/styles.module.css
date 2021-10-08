@@ -10,7 +10,7 @@
 
 .logo {
   display: inline-block;
-  font: 700 1.31rem var(--title-font);
+  font: 700 2.25rem var(--title-font);
   color: var(--title-color);
   margin-bottom: 1.5rem;
 }
@@ -22,4 +22,29 @@
 .social {
   display: flex;
   gap: 2rem;
+}
+
+.icon {
+  display: block;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: grid;
+    padding: 3.75rem 0;
+  }
+
+  .content {
+    width: 100%;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 }

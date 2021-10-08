@@ -36,7 +36,7 @@
   color: var(--title-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .desktop{
     visibility: visible;
   }
@@ -47,15 +47,20 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+.close {
+  position: absolute;
+
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+@media screen and (max-width: 767) {
   .container ul {
     gap: 4rem;
   }
+}
 
-  .close {
-    position: absolute;
-  
-    right: 1.5rem;
-    top: 1.5rem;
-  }
+.active {
+  color: var(--base-color);
+  font-weight: bold;
 }

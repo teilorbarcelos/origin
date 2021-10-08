@@ -11,6 +11,7 @@ import ScrollReveal from '../ScrollReveal'
 export default function Main() {
   return (
     <main className={styles.main}>
+
       <ScrollReveal>
         <Home />
       </ScrollReveal>
