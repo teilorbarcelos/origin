@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.developedBy}>
-        <p>Developed by <a className={styles.myLink} target="_blank" href="https://teilorwebdev.vercel.app/">Teilor Souza Barcelos</a></p>
+        <p>Developed by <a className={styles.myLink} rel="noreferrer" target="_blank" href="https://teilorwebdev.vercel.app/">Teilor Souza Barcelos</a></p>
       </div>
     </footer>
   )
