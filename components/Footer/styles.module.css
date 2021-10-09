@@ -33,6 +33,34 @@
   transform: translateY(-3px);
 }
 
+.developedBy {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  color: var(--text-color-light);
+}
+
+.myLink {
+  font: 700 1rem var(--title-font);
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    padding: 3.75rem 0;
+  }
+
+  .content {
+    width: 100%;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     display: grid;
